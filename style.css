@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    width: 250px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(50% - 10px);
+    }   
+}
+
+@media  and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
